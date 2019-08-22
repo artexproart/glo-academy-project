@@ -1,0 +1,51 @@
+.services
+    &-title
+        text-align: center
+        color: #485168
+        font-family: Roboto
+        font-size: 30px
+        font-weight: 700
+        line-height: 22px
+    &-subtitle
+        text-align: center
+        padding-top: 24px
+        padding-bottom: 74px
+        color: #7f8ba3
+        font-family: Roboto
+        font-size: 14px
+        font-weight: 700
+        line-height: 22px
+    &-card
+        display: flex
+        justify-content: space-between
+        padding-bottom: 85px
+        text-align: center
+        &__box
+            width: 266px
+            height: 203px
+            box-shadow: 0 10px 38px rgba(18, 31, 54, 0.07)
+            border: 1px solid rgba(0, 0, 0, 0.06)
+            background-color: #ffffff
+            &:hover
+                box-shadow: 0 10px 38px rgba(62, 126, 241, 0.14)
+                border: 1px solid rgba(0, 0, 0, 0.02)
+        &__icon
+            padding-top: 68px
+        &__text
+            padding-top: 10px
+            padding-bottom: 10px
+        &__second
+            display: none
+        &__first
+            :hover
+            .services-card__second
+                display: block
+    &-button
+        text-align: center
+        &__click
+            width: 178px
+            height: 50px
+            border-radius: 25px
+            background-color: #e9eef6
+            border: none
+            cursor: pointer
