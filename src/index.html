@@ -6,8 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Финнланд</title>
-    <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
@@ -55,21 +55,23 @@
             </header>
         </section>
         <!-- section header -->
-        <div class="bcg-dentist"></div>
+        <div id="bcg" class="bcg-dentist"></div>
         <!-- фоновая картинка -->
         <section class="contact">
             <div class="wraper">
                 <div class="container">
                     <div class="row">
-                        <form action="contact-row" class="form row-form">
+                        <form action="#" id="row-form" class="form row-form action success">
                             <div class="row-form__contact row-name">
                                 <img src="img/contact/naime.png" class="row-form__icon" alt="имя">
-                                <input type="text" class="row__input row-name__input" placeholder="Ваше имя">
+                                <input type="text" name="username" class="row__input row-name__input username1"
+                                    placeholder="Ваше имя">
                             </div>
                             <!-- /.row-contact__name -->
                             <div class="row-form__contact row-tel">
                                 <img src="img/contact/tell.png" class="row-form__icon" alt="tel">
-                                <input type="tel" class="row__input row-tel__input" placeholder="Ваш телефон">
+                                <input type="tel" name="userphone" class="phone row__input row-tel__input userphone1"
+                                    placeholder="Ваш телефон">
                             </div>
                             <!-- /.row-contact__tel -->
                             <div class="row-form__contact row-button">
@@ -230,79 +232,186 @@
             <!-- /.container -->
         </section>
         <!-- /.review -->
-        <section class="connection">
-            <div class="container">
-                <div class="connection-wrap">
-                    <div class="connection-block">
-                        <h2 class="connection-block__title">Остались вопросы?</h2>
-                        <p class="connection-block__subtitle">Заполните форму и наши сотрудники свяжутфся с вами в
-                            ближайшее время
-                            и ответят на все интересующие вас вопросы</p>
-                        <div class="connection-block__form">
-                            <form action="#" id="#" class="connection-form">
-                                <div class="connection-form__username connection-form__wrapper">
-                                    <input type="text" name="username"
-                                        class="connection-input input connection-input__username username"
-                                        placeholder="Ваше имя">
-                                </div>
-                                <div class="connection-form__userphone connection-form__wrapper">
-                                    <input type="tel" name="userphone"
-                                        class="connection-input input connection-input__userphone userphone"
-                                        placeholder="Ваш телефон">
-                                </div>
-                                <div class="connection-form__usermessage connection-form__wrapper">
-                                    <input type="text" name="usermessage"
-                                        class="connection-input input connection-input__usermessage usermessage"
-                                        placeholder="Ваш вопрос...">
-                                </div>
-                                <div class="connection-button__wrapper">
-                                    <button class="button connection-button connection-button__click">Отправить вопрос</button>
-                                </div>
-                            </form>
-                        </div>
-                        <!-- /.form connection-block__form -->
-                    </div>
-                    <!-- /.connection-wrap__block -->
-                    <div class="connection-block">
-                        <div class="connection-map">
-                            <div class="connection-map__aderess"></div>
-                            <!-- /.connection-map__adrerss КАРТА-->
-                            <p class="connection-map__text">К нам очень легко добраться. Вы можете связаться с нами по
-                                укзанным контактам или же заполнить форму и наши сотрудники проконсультируют вас по всем
-                                вопросам</p>
-                        </div>
-                        <!-- /.connection-map -->
-                        <div class="connection-map__info">
-                            <h2 class="connection-info__title">Контактная информация</h2>
-                            <div class="connection-info">
-                                <div class="connection-info__tel">
-                                    <h4 class="connection-tel__title connection-info__subtitle">Номера телефонов:</h4>
-                                    <p class="connection-tel__text connection-info__text">+7 (390) 254 63 25</p>
-                                    <p class="connection-tel__text connection-info__text">+7 (390) 477 12 49</p>
-                                </div>
-                                <div class="connection-info__adress">
-                                    <h4 class="connection-adress__title connection-info__subtitle">Адрес:</h4>
-                                    <p class="connection-adress__text connection-info__text">г. Красноярск, район Центр,
-                                    </p>
-                                    <p class="connection-adress__text connection-info__text">ул. Тельмана, д. 35</p>
-                                </div>
-                                <div class="connection-info__mail">
-                                    <h4 class="connection-mail__title connection-info__subtitle">E-mail:</h4>
-                                    <p class="connection-mail__text connection-info__text">finland24@mail.ru</p>
-                                    <p class="connection-mail__text connection-info__text">finland24@mail.ru</p>
-                                </div>
+    </main>
+    <section class="connection">
+        <div class="container">
+            <div class="connection-wrap">
+                <div class="connection-block">
+                    <h2 class="connection-block__title">Остались вопросы?</h2>
+                    <p class="connection-block__subtitle">Заполните форму и наши сотрудники свяжутфся с вами в
+                        ближайшее время
+                        и ответят на все интересующие вас вопросы</p>
+                    <div class="connection-block__form">
+                        <form action="#" id="connection-form" class="connection-form">
+                            <div class="connection-form__username connection-form__wrapper">
+                                <input type="text" name="username"
+                                    class="connection-input input connection-input__username username2"
+                                    placeholder="Ваше имя">
                             </div>
-                            <!-- /.connection-info -->
-                        </div>
-                        <!-- /.connection-map__info -->
+                            <div class="connection-form__userphone connection-form__wrapper">
+                                <input type="tel" name="userphone"
+                                    class="connection-input input phone connection-input__userphone userphone2"
+                                    placeholder="Ваш телефон">
+                            </div>
+                            <div class="connection-form__usermessage connection-form__wrapper">
+                                <input type="text" name="usermessage"
+                                    class="connection-input input connection-input__usermessage usermessage2"
+                                    placeholder="Ваш вопрос...">
+                            </div>
+                            <div class="connection-button__wrapper">
+                                <button class="button connection-button connection-button__click">Отправить
+                                    вопрос</button>
+                            </div>
+                        </form>
                     </div>
-                    <!-- /.connection-wrap__block -->
+                    <!-- /.form connection-block__form -->
                 </div>
-                <!-- /.connection-wrap -->
+                <!-- /.connection-wrap__block -->
+                <div class="connection-block">
+                    <div class="connection-map">
+                        <div class="connection-map__aderess"></div>
+                        <!-- /.connection-map__adrerss КАРТА-->
+                        <p class="connection-map__text">К нам очень легко добраться. Вы можете связаться с нами по
+                            укзанным контактам или же заполнить форму и наши сотрудники проконсультируют вас по всем
+                            вопросам</p>
+                    </div>
+                    <!-- /.connection-map -->
+                    <div class="connection-map__info">
+                        <h2 class="connection-info__title">Контактная информация</h2>
+                        <div class="connection-info">
+                            <div class="connection-info__tel">
+                                <h4 class="connection-tel__title connection-info__subtitle">Номера телефонов:</h4>
+                                <p class="connection-tel__text connection-info__text">+7 (390) 254 63 25</p>
+                                <p class="connection-tel__text connection-info__text">+7 (390) 477 12 49</p>
+                            </div>
+                            <div class="connection-info__adress">
+                                <h4 class="connection-adress__title connection-info__subtitle">Адрес:</h4>
+                                <p class="connection-adress__text connection-info__text">г. Красноярск, район Центр,
+                                </p>
+                                <p class="connection-adress__text connection-info__text">ул. Тельмана, д. 35</p>
+                            </div>
+                            <div class="connection-info__mail">
+                                <h4 class="connection-mail__title connection-info__subtitle">E-mail:</h4>
+                                <p class="connection-mail__text connection-info__text">finland24@mail.ru</p>
+                                <p class="connection-mail__text connection-info__text">finland24@mail.ru</p>
+                            </div>
+                        </div>
+                        <!-- /.connection-info -->
+                    </div>
+                    <!-- /.connection-map__info -->
+                </div>
+                <!-- /.connection-wrap__block -->
+            </div>
+            <!-- /.connection-wrap -->
+        </div>
+        <!-- /.container -->
+    </section>
+    <!-- connection -->
+    <section class="offer">
+        <div class="container">
+            <div class="offer-block">
+                <h2 class="offer-block__title">Запишитесь на прием прямо сейчас!</h2>
+                <p class="offer-block__subtitle">Отправьте заявку на прием в нашу стоматологическую клинику и наши
+                    сотрудники свяжутся с вами в ближайшее время</p>
+                <div class="offer-form">
+                    <div class="row">
+                        <form action="#" id="row-form" class="form row-form action success">
+                            <div class="row-form__contact row-name">
+                                <img src="img/contact/naime.png" class="row-form__icon" alt="имя">
+                                <input type="text" name="username" class="row__input row-name__input username1"
+                                    placeholder="Ваше имя">
+                            </div>
+                            <!-- /.row-contact__name -->
+                            <div class="row-form__contact row-tel">
+                                <img src="img/contact/tell.png" class="row-form__icon" alt="tel">
+                                <input type="tel" name="userphone" class="phone row__input row-tel__input userphone1"
+                                    placeholder="Ваш телефон">
+                            </div>
+                            <!-- /.row-contact__tel -->
+                            <div class="row-form__contact row-button">
+                                <button class="button row-button__click">Записаться на прием</button>
+                            </div>
+                        </form>
+                        <!-- /.form row-form -->
+                    </div>
+                    <!-- /.offer-form -->
+                </div>
+                <!-- /.offer-block -->
             </div>
             <!-- /.container -->
-        </section>
-    </main>
+    </section>
+    <!-- /.offer -->
+    <section class="footer">
+        <div class="container">
+            <footer class="footer-wrap">
+                <div class="footer-visited__wrapper">
+                    <div class="navbar-logo footer-visited__column footer-visited__logo">
+                        <span class="logo__text">СТОМАТОЛОГИЧЕСКАЯ СТУДИЯ</span>
+                        <span class="logo__title">Финнланд</span>
+                        <p class="footer-visited__link">Репутация важнее денег. Над ней не властны ни инфляции, ни
+                            кризисы.
+                        </p>
+                    </div>
+                    <div class="footer-visited__column">
+                        <h5 class="footer-visited__title">О компании</h5>
+                        <p class="footer-visited__link">Сотрудники</p>
+                        <p class="footer-visited__link">Отзывы</p>
+                        <p class="footer-visited__link">Партнеры</p>
+                        <p class="footer-visited__link">Акции и скидки</p>
+                        <p class="footer-visited__link">Вакансии</p>
+                    </div>
+                    <div class="footer-visited__column">
+                        <h5 class="footer-visited__title">Наши услуги</h5>
+                        <p class="footer-visited__link">Лечение зубов</p>
+                        <p class="footer-visited__link">Детский прием</p>
+                        <p class="footer-visited__link">Протезирование</p>
+                        <p class="footer-visited__link">Прайс лист</p>
+                    </div>
+                    <div class="footer-visited__column">
+                        <h5 class="footer-visited__title">Наши услуги</h5>
+                        <p class="footer-visited__link">Ортодонтия</p>
+                        <p class="footer-visited__link">Профессиональная гигиена</p>
+                        <p class="footer-visited__link">Отбеливание зубов</p>
+                    </div>
+                    <div class="footer-visited__column">
+                        <h5 class="footer-visited__title">Контакты</h5>
+                        <p class="footer-visited__link">finland24@mail.ru</p>
+                        <p class="footer-visited__link">+7 (390) 254 63 25</p>
+                        <p class="footer-visited__link">+7 (390) 477 12 49</p>
+                    </div>
+                </div>
+                <!-- footer-wrap -->
+                <div class="footer-copyright">
+                    <div class="fotter-copyright__main">
+                        <p class="footer-copyright__text">© 2012-2019 Стоматологическая студия «Финнланд»</p>
+                    </div>
+                    <div class="fotter-copyright__main">
+                        <p class="footer-copyright__text">Создание сайта: Glo Academy</p>
+                    </div>
+                </div>
+                <!-- /.footer-coperyte -->
+            </footer>
+        </div>
+    </section>
+    <div class="bcg-footer"><img src="img/bcg/footer.png" alt="фон"></div>
+    <!-- /картинка футер -->
+    <!-- модальное окно mini -->
+    <!-- <div class="modalmini" id="modalmini">
+        <div class="modalmini-dialog">
+            <button class="modalmini-dialog__close" id="closemini">&times;</button>
+            <div class="modalmini-column">
+                <div class="offer-block offer-block__modal">
+                    <h2 class="section-title offer__title">Спасибо за ваше обращение</h2>
+                </div>
+            </div>
+        </div>
+    </div> -->
+    <!-- модальное окно mini -->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/jquery.validate.min.js"></script>
+    <script src="js/form.js"></script>
+    <script src="js/jquery.maskedinput.min.js"></script>
+    <script src="js/background.js"></script>
 </body>
 
 </html>
