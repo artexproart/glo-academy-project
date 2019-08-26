@@ -1,6 +1,9 @@
+//jQuery David Macfarlend, page 319
+// Exchangeable image
+
 $(document).ready(function () {
     var newPhoto = new Image();
-    newPhoto.src = '../img/bcg/dentist.png';
+    newPhoto.src = 'img/bcg/dentist.png';
     var oldSrc = $('#bcg').attr('src');
     $('#bcg').hover(
         function () {
