@@ -11,11 +11,15 @@
 </head>
 
 <body>
-    <div id="bcg" class="bcg-dentist"><img src="img/bcg/dentistry.png" alt="dantist"></div>
+    <div class="bcg-dentist">
+        <img src="img/bcg/dentistry.png" class="bcg-dentist__img" id="bcg" alt="dantist">
+    </div>
     <!-- фоновая картинка dantist -->
     <div class="bcg-teeth"><img src="img/bcg/teeth.png" alt="зубы"></div>
     <!-- фоновая картинка зубы -->
-    <div class="bcg-footer"><img src="img/bcg/footer.png" alt="фон"></div>
+    <!-- <div class="bcg-footer">
+        <img src="img/bcg/footer.png" class="bcg-footer__img" alt="фон">
+    </div> -->
     <!-- /картинка футер -->
     <nav class="navbar">
         <div class="container">
@@ -199,8 +203,8 @@
             <div class="container">
                 <h2 class="review-title">Отзывы</h2>
                 <h2 class="review-subtitle">наших пациентов</h2>
-                <div class="review-wrap slider">
-                    <div class="review-wrap__block">
+                <div class="review-wrap slider owl-carousel owl-theme">
+                    <div class="item review-wrap__block">
                         <div class="review-card">
                             <img src="img/review/review-icon.png" class="review-card__icon">
                         </div>
@@ -213,7 +217,7 @@
                             <p class="review-card__data">01.01.2018</p>
                         </div>
                     </div>
-                    <div class="review-wrap__block">
+                    <div class="item review-wrap__block">
                         <div class="review-card">
                             <img src="img/review/review-icon.png" class="review-card__icon">
                         </div>
@@ -227,7 +231,7 @@
                             <p class="review-card__data">01.01.2018</p>
                         </div>
                     </div>
-                    <div class="review-wrap__block">
+                    <div class="item review-wrap__block">
                         <div class="review-card">
                             <img src="img/review/review-icon.png" class="review-card__icon">
                         </div>
@@ -240,7 +244,7 @@
                             <p class="review-card__data">01.01.2018</p>
                         </div>
                     </div>
-                    <div class="review-wrap__block">
+                    <div class="item review-wrap__block">
                         <div class="review-card">
                             <img src="img/review/review-icon.png" class="review-card__icon">
                         </div>
@@ -256,10 +260,28 @@
                     <!-- /.review-wrap__block -->
                 </div>
                 <!-- /.review-wrap slider -->
-                <div class="arrows-review">
+                <div class="owl-carousel owl-theme owl-loaded">
+                    <div class="owl-stage-outer">
+                        <div class="owl-stage">
+                            <div class="owl-item">...</div>
+                            <div class="owl-item">...</div>
+                            <div class="owl-item">...</div>
+                        </div>
+                    </div>
+                    <div class="owl-nav">
+                        <div class="owl-prev"><img src="img/review/review-arrow-left.png" alt="prev"></div>
+                        <div class="owl-next"><img src="img/review/review-arrow_activ.png" alt="next"></div>
+                    </div>
+                    <div class="owl-dots">
+                        <div class="owl-dot active"><span></span></div>
+                        <div class="owl-dot"><span></span></div>
+                        <div class="owl-dot"><span></span></div>
+                    </div>
+                </div>
+                <!-- <div class="arrows-review">
                     <div class="arrows-left"><img src="img/review/review-arrow-left.png" alt=""></div>
                     <div class="arrows-right"><img src="img/review/review-arrow_activ.png" alt=""></div>
-                </div>
+                </div> -->
             </div>
             <!-- /.container -->
         </section>
@@ -302,7 +324,9 @@
                 <div class="connection-block">
                     <div class="connection-map">
                         <div class="connection-map__aderess">
-                                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2227.7807686563397!2d92.97603911590585!3d56.057096675949154!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5cd7a59369490f41%3A0x9a54cd36486e206b!2z0JzQtdC00LjRhtC40L3RgdC60LjQuSDRhtC10L3RgtGAICLQl9C00L7RgNC-0LLRi9C5INC60YDQsNC5Ig!5e0!3m2!1sru!2sru!4v1566827761488!5m2!1sru!2sru" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+                            <iframe
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2227.7807686563397!2d92.97603911590585!3d56.057096675949154!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5cd7a59369490f41%3A0x9a54cd36486e206b!2z0JzQtdC00LjRhtC40L3RgdC60LjQuSDRhtC10L3RgtGAICLQl9C00L7RgNC-0LLRi9C5INC60YDQsNC5Ig!5e0!3m2!1sru!2sru!4v1566827761488!5m2!1sru!2sru"
+                                width="600" height="450" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
                         </div>
                         <!-- /.connection-map__adrerss КАРТА-->
                         <p class="connection-map__text">К нам очень легко добраться. Вы можете связаться с нами по
@@ -427,7 +451,7 @@
             </footer>
         </div>
     </section>
-    <div class="bcg-footer"><img src="img/bcg/footer.png" alt="фон"></div>
+    <!-- <div class="bcg-footer"><img src="img/bcg/footer.png" alt="фон"></div> -->
     <!-- /картинка футер -->
     <!-- модальное окно mini -->
     <!-- <div class="modalmini" id="modalmini">
@@ -442,8 +466,9 @@
     </div> -->
     <!-- модальное окно mini -->
     <script src="js/jquery.min.js"></script>
-    <script src="js/slick.min.js"></script>
-    <script src="js/slick-slider.js"></script>
+    <!-- <script src="js/slick.min.js"></script> -->
+    <script src="js/owl.carousel.js"></script>
+    <script src="js/slider.js"></script>
     <script src="js/jquery.validate.min.js"></script>
     <script src="js/form.js"></script>
     <script src="js/jquery.maskedinput.min.js"></script>
