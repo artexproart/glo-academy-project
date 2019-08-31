@@ -15,29 +15,33 @@
         <img src="img/bcg/dentistry.png" class="bcg-dentist__img" id="bcg" alt="dantist">
     </div>
     <!-- фоновая картинка dantist -->
-    <div class="bcg-teeth"><img src="img/bcg/teeth.png" alt="зубы"></div>
+    <div class="bcg-teeth">
+        <img src="img/bcg/teeth.png" alt="зубы">
+    </div>
     <!-- фоновая картинка зубы -->
     <!-- <div class="bcg-footer">
         <img src="img/bcg/footer.png" class="bcg-footer__img" alt="фон">
     </div> -->
     <!-- /картинка футер -->
+
     <nav class="navbar">
         <div class="container">
             <div class="navbar-block">
                 <div class="navbar-logo">
-                    <span class="logo__text">СТОМАТОЛОГИЧЕСКАЯ СТУДИЯ</span>
-                    <span class="logo__title">Финнланд</span>
+                    <a href="#"><img src="img/header/logo.jpg" alt="Logo" class="navbar-logo__brend"></a>
                 </div>
                 <!-- /.navbar__logo -->
                 <div class="navbar-menu">
-                    <span class="menu__link">О компании</span>
-                    <span class="menu__link">Услуги</span>
-                    <span class="menu__link">Цены</span>
-                    <span class="menu__link">Контакты</span>
+                    <ul class="navbar-menu__link">
+                        <li><a href="#header"><span class="menu__link">О компании</span></a></li>
+                        <li><a href="#services"><span class="menu__link">Услуги</span></a></li>
+                        <li><a href="#adout"><span class="menu__link">Цены</span></a></li>
+                        <li><a href="#connection"><span class="menu__link">Контакты</span></a></li>
+                    </ul>
                 </div>
                 <!-- /.navbar__menu -->
                 <div class="navbar-info">
-                    <a href="tel:+83902546325" class="navbar__contacts">8 (390) 254-63-25</a>
+                    <a href="tel:+83902546325" class="navbar__contacts"><span>8 (390) 254-63-25</span></a>
                     <button class="button__info">Заказать звонок</button>
                 </div>
                 <!-- /.navbar__info -->
@@ -48,7 +52,7 @@
     </nav>
     <!-- /.navbar -->
     <main>
-        <section class="header">
+        <section id="header" class="header">
             <header class="container">
                 <div class="header-wrap">
                     <div class="header__title">
@@ -60,234 +64,232 @@
                             стало результатом многолетней совместной деятельности коллектива.</span>
                     </div>
                     <img src="img/header/line.png" alt="line" class="header__line">
-                    <p class="header__text">Хотите попасть на прием? <a href="http://">Заполните форму ниже</a></p>
+                    <p class="header__text">Хотите попасть на прием? <a href="#" class="header__link">Заполните форму ниже</a></p>
                 </div>
+                <div class="contact">
+                    <div class="wraper">
+                        <div class="row">
+                            <form action="#" id="row-form" class="form row-form action success">
+                                <div class="row-form__contact row-name">
+                                    <img src="img/contact/naime.png" class="row-form__icon" alt="имя">
+                                    <input type="text" name="username" class="row__input row-name__input username1"
+                                        placeholder="Ваше имя">
+                                </div>
+                                <!-- /.row-contact__name -->
+                                <div class="row-form__contact row-tel">
+                                    <img src="img/contact/tell.png" class="row-form__icon" alt="tel">
+                                    <input type="tel" name="userphone"
+                                        class="phone row__input row-tel__input userphone1" placeholder="Ваш телефон">
+                                </div>
+                                <!-- /.row-contact__tel -->
+                                <div class="row-form__contact row-button">
+                                    <button class="button row-button__click">Записаться на прием</button>
+                                </div>
+                            </form>
+                            <!-- /.form row-form -->
+                        </div>
+                        <!-- /.row- -->
+                    </div>
+                    <!-- /.wraper -->
+                </div>
+                <!-- /.contact -->
             </header>
         </section>
         <!-- section header -->
-        <section class="contact">
-            <div class="wraper">
-                <div class="container">
-                    <div class="row">
-                        <form action="#" id="row-form" class="form row-form action success">
-                            <div class="row-form__contact row-name">
-                                <img src="img/contact/naime.png" class="row-form__icon" alt="имя">
-                                <input type="text" name="username" class="row__input row-name__input username1"
-                                    placeholder="Ваше имя">
-                            </div>
-                            <!-- /.row-contact__name -->
-                            <div class="row-form__contact row-tel">
-                                <img src="img/contact/tell.png" class="row-form__icon" alt="tel">
-                                <input type="tel" name="userphone" class="phone row__input row-tel__input userphone1"
-                                    placeholder="Ваш телефон">
-                            </div>
-                            <!-- /.row-contact__tel -->
-                            <div class="row-form__contact row-button">
-                                <button class="button row-button__click">Записаться на прием</button>
-                            </div>
-                        </form>
-                        <!-- /.form row-form -->
-                    </div>
-                    <!-- /.row- -->
+    </main>
+    <section class="section services" id="services">
+        <div class="container">
+            <h2 class="services-title">Наши услуги</h2>
+            <p class="services-subtitle">Репутация важнее денег. Над ней не властны ни инфляции, ни кризисы.</p>
+            <div class="services-card">
+                <div class="services-card__box">
+                    <img src="img/services/icon-1.svg" class="services-card__icon" alt="услуги">
+                    <p class="services-card__text">Лечение зубов</p>
+                    <!-- <div class="services-card__first">
+                        <div class="services-card__second">
+                            <img src="img/services/step.png" alt="Жми" class="services-card__step">
+                        </div>
+                    </div> -->
                 </div>
-                <!-- /.container -->
-            </div>
-            <!-- /.wraper -->
-        </section>
-        <!-- /.contact -->
-        <section class="section services">
-            <div class="container">
-                <h2 class="services-title">Наши услуги</h2>
-                <p class="services-subtitle">Репутация важнее денег. Над ней не властны ни инфляции, ни кризисы.</p>
-                <div class="services-card">
-                    <div class="services-card__box">
-                        <img src="img/services/icon-1.svg" class="services-card__icon" alt="услуги">
-                        <p class="services-card__text">Лечение зубов</p>
-                        <div class="services-card__first">
-                            <div class="services-card__second">
-                                <img src="img/services/step.png" alt="Жми" class="services-card__step">
-                            </div>
+                <div class="services-card__box">
+                    <img src="img/services/icon-2.svg" class="services-card__icon" alt="услуги">
+                    <p class="services-card__text">Детский прием</p>
+                    <!-- <div class="services-card__first">
+                        <div class="services-card__second">
+                            <img src="img/services/step.png" alt="Жми" class="services-card__step">
                         </div>
-                    </div>
-                    <div class="services-card__box">
-                        <img src="img/services/icon-2.svg" class="services-card__icon" alt="услуги">
-                        <p class="services-card__text">Детский прием</p>
-                        <div class="services-card__first">
-                            <div class="services-card__second">
-                                <img src="img/services/step.png" alt="Жми" class="services-card__step">
-                            </div>
-                        </div>
-                    </div>
-                    <div class="services-card__box">
-                        <img src="img/services/icon-3.svg" class="services-card__icon" alt="услуги">
-                        <p class="services-card__text">Протезирование</p>
-                        <div class="services-card__first">
-                            <div class="services-card__second">
-                                <img src="img/services/step.png" alt="Жми" class="services-card__step">
-                            </div>
-                        </div>
-                    </div>
-                    <div class="services-card__box">
-                        <img src="img/services/icon-4.svg" class="services-card__icon" alt="услуги">
-                        <p class="services-card__text">Ортодонтия</p>
-                        <div class="services-card__first">
-                            <div class="services-card__second">
-                                <img src="img/services/step.png" alt="Жми" class="services-card__step">
-                            </div>
-                        </div>
-                    </div>
+                    </div> -->
                 </div>
-                <!-- /.services-card -->
-                <div class="services-button">
-                    <button class="button services-button__click">Все услуги</button>
+                <div class="services-card__box">
+                    <img src="img/services/icon-3.svg" class="services-card__icon" alt="услуги">
+                    <p class="services-card__text">Протезирование</p>
+                    <!-- <div class="services-card__first">
+                        <div class="services-card__second">
+                            <img src="img/services/step.png" alt="Жми" class="services-card__step">
+                        </div>
+                    </div> -->
+                </div>
+                <div class="services-card__box">
+                    <img src="img/services/icon-4.svg" class="services-card__icon" alt="услуги">
+                    <p class="services-card__text">Ортодонтия</p>
+                    <!-- <div class="services-card__first">
+                        <div class="services-card__second">
+                            <img src="img/services/step.png" alt="Жми" class="services-card__step">
+                        </div>
+                    </div> -->
                 </div>
             </div>
-        </section>
-        <!-- /.section portfolio -->
-        <section class="adout">
-            <div class="container">
-                <h2 class="about-title">Почему мы?</h2>
-                <div class="about-wrapper">
-                    <div class="about-block">
-                        <div class="about-block__wrappers">
-                            <div class="adout-skill">
-                                <img src="img/about/about-equipment.png" class="about-skill__icon" alt="skill">
-                            </div>
-                            <div class="about-skill__blocks">
-                                <h3 class="about-skill__title">Современное оборудование</h3>
-                                <p class="about-skill__subtitle">Только самое современное оборудование, в состав
-                                    которого входит новейший цифровой рентгеновский аппарат</p>
-                            </div>
+            <!-- /.services-card -->
+            <div class="services-button">
+                <button class="button services-button__click">Все услуги</button>
+            </div>
+        </div>
+    </section>
+    <!-- /.section portfolio -->
+    <section class="adout" id="adout">
+        <div class="container">
+            <h2 class="about-title">Почему мы?</h2>
+            <div class="about-wrapper">
+                <div class="about-block">
+                    <div class="about-block__wrappers">
+                        <div class="adout-skill">
+                            <img src="img/about/about-equipment.png" class="about-skill__icon" alt="skill">
                         </div>
-                        <div class="about-block__wrappers">
-                            <div class="adout-skill">
-                                <img src="img/about/about-price.png" class="about-skill__icon" alt="skill">
-                            </div>
-                            <div class="about-skill__blocks">
-                                <h3 class="about-skill__title">Демократичные цены</h3>
-                                <p class="about-skill__subtitle">Ценовая политика в нашей стоматологической клинике
-                                    весьма демократичная и подойдет каждому клиенту</p>
-                            </div>
+                        <div class="about-skill__blocks">
+                            <h3 class="about-skill__title">Современное оборудование</h3>
+                            <p class="about-skill__subtitle">Только самое современное оборудование, в состав
+                                которого входит новейший цифровой рентгеновский аппарат</p>
                         </div>
                     </div>
-                    <!-- /.about-block -->
-                    <div class="about-block">
-                        <div class="about-block__wrappers">
-                            <div class="adout-skill">
-                                <img src="img/about/about-head.png" class="about-skill__icon" alt="skill">
-                            </div>
-                            <div class="about-skill__blocks">
-                                <h3 class="about-skill__title">Опытное руководоство и ведущие специалисты</h3>
-                                <p class="about-skill__subtitle">Нами руководит опытный врач, стаж работы которого в
-                                    стоматологии более 15 лет.</p>
-                            </div>
+                    <div class="about-block__wrappers">
+                        <div class="adout-skill">
+                            <img src="img/about/about-price.png" class="about-skill__icon" alt="skill">
                         </div>
-                        <div class="about-block__wrappers">
-                            <div class="adout-skill">
-                                <img src="img/about/about-security.png" class="about-skill__icon" alt="skill">
-                            </div>
-                            <div class="about-skill__blocks">
-                                <h3 class="about-skill__title">Безопасность лечения</h3>
-                                <p class="about-skill__subtitle">Одноразовые расходные материалы, лучшие
-                                    стерилизационные системы. Мы гарантируем безопасность лечения</p>
-                            </div>
+                        <div class="about-skill__blocks">
+                            <h3 class="about-skill__title">Демократичные цены</h3>
+                            <p class="about-skill__subtitle">Ценовая политика в нашей стоматологической клинике
+                                весьма демократичная и подойдет каждому клиенту</p>
                         </div>
                     </div>
                 </div>
                 <!-- /.about-block -->
+                <div class="about-block">
+                    <div class="about-block__wrappers">
+                        <div class="adout-skill">
+                            <img src="img/about/about-head.png" class="about-skill__icon" alt="skill">
+                        </div>
+                        <div class="about-skill__blocks">
+                            <h3 class="about-skill__title">Опытное руководоство и ведущие специалисты</h3>
+                            <p class="about-skill__subtitle">Нами руководит опытный врач, стаж работы которого в
+                                стоматологии более 15 лет.</p>
+                        </div>
+                    </div>
+                    <div class="about-block__wrappers">
+                        <div class="adout-skill">
+                            <img src="img/about/about-security.png" class="about-skill__icon" alt="skill">
+                        </div>
+                        <div class="about-skill__blocks">
+                            <h3 class="about-skill__title">Безопасность лечения</h3>
+                            <p class="about-skill__subtitle">Одноразовые расходные материалы, лучшие
+                                стерилизационные системы. Мы гарантируем безопасность лечения</p>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <!-- /.container -->
-        </section>
-        <!-- /.adout -->
-        <section class="review">
-            <div class="container">
-                <h2 class="review-title">Отзывы</h2>
-                <h2 class="review-subtitle">наших пациентов</h2>
-                <div class="review-wrap slider owl-carousel owl-theme">
-                    <div class="item review-wrap__block">
-                        <div class="review-card">
-                            <img src="img/review/review-icon.png" class="review-card__icon">
-                        </div>
-                        <div class="review-content">
-                            <img src="img/review/review-1.png" class="review-card__face">
-                            <p class="review-card__text">Спасибо вашей стоматологии за быструю и качественную работу.
-                                Лечились у вас всей семьей и остались очень довольны! Теперь будем обслуживаться только
-                                у вас. Советуем всем посетить стоматологию “Финнланд”</p>
-                            <p class="review-card__name">Елизавета Бубнова</p>
-                            <p class="review-card__data">01.01.2018</p>
-                        </div>
+            <!-- /.about-block -->
+        </div>
+        <!-- /.container -->
+    </section>
+    <!-- /.adout -->
+    <section class="review">
+        <div class="container">
+            <h2 class="review-title">Отзывы</h2>
+            <h2 class="review-subtitle">наших пациентов</h2>
+            <div class="review-wrap slider owl-carousel owl-theme">
+                <div class="item review-wrap__block">
+                    <div class="review-card">
+                        <img src="img/review/review-icon.png" class="review-card__icon">
                     </div>
-                    <div class="item review-wrap__block">
-                        <div class="review-card">
-                            <img src="img/review/review-icon.png" class="review-card__icon">
-                        </div>
-                        <div class="review-content">
-                            <img src="img/review/review-2.png" class="review-card__face">
-                            <p class="review-card__text">Спасибо вашей стоматологии за быструю и качественную работу.
-                                Лечились у вас всей семьей и остались очень довольны! Теперь будем обслуживаться только
-                                у вас.
-                                Советуем всем посетить стоматологию “Финнланд”</p>
-                            <p class="review-card__name">Анастасия Петрова</p>
-                            <p class="review-card__data">01.01.2018</p>
-                        </div>
-                    </div>
-                    <div class="item review-wrap__block">
-                        <div class="review-card">
-                            <img src="img/review/review-icon.png" class="review-card__icon">
-                        </div>
-                        <div class="review-content">
-                            <img src="img/review/review-1.png" class="review-card__face">
-                            <p class="review-card__text">Спасибо вашей стоматологии за быструю и качественную работу.
-                                Лечились у вас всей семьей и остались очень довольны! Теперь будем обслуживаться только
-                                у вас. Советуем всем посетить стоматологию “Финнланд”</p>
-                            <p class="review-card__name">Елизавета Бубнова</p>
-                            <p class="review-card__data">01.01.2018</p>
-                        </div>
-                    </div>
-                    <div class="item review-wrap__block">
-                        <div class="review-card">
-                            <img src="img/review/review-icon.png" class="review-card__icon">
-                        </div>
-                        <div class="review-content">
-                            <img src="img/review/review-1.png" class="review-card__face">
-                            <p class="review-card__text">Спасибо вашей стоматологии за быструю и качественную работу.
-                                Лечились у вас всей семьей и остались очень довольны! Теперь будем обслуживаться только
-                                у вас. Советуем всем посетить стоматологию “Финнланд”</p>
-                            <p class="review-card__name">Елизавета Бубнова</p>
-                            <p class="review-card__data">01.01.2018</p>
-                        </div>
-                    </div>
-                    <!-- /.review-wrap__block -->
-                </div>
-                <!-- /.review-wrap slider -->
-                <div class="owl-carousel owl-theme owl-loaded">
-                    <div class="owl-stage-outer">
-                        <div class="owl-stage">
-                            <div class="owl-item">...</div>
-                            <div class="owl-item">...</div>
-                            <div class="owl-item">...</div>
-                        </div>
-                    </div>
-                    <div class="owl-nav">
-                        <div class="owl-prev"><img src="img/review/review-arrow-left.png" alt="prev"></div>
-                        <div class="owl-next"><img src="img/review/review-arrow_activ.png" alt="next"></div>
-                    </div>
-                    <div class="owl-dots">
-                        <div class="owl-dot active"><span></span></div>
-                        <div class="owl-dot"><span></span></div>
-                        <div class="owl-dot"><span></span></div>
+                    <div class="review-content">
+                        <img src="img/review/review-1.png" class="review-card__face">
+                        <p class="review-card__text">Спасибо вашей стоматологии за быструю и качественную работу.
+                            Лечились у вас всей семьей и остались очень довольны! Теперь будем обслуживаться только
+                            у вас. Советуем всем посетить стоматологию “Финнланд”</p>
+                        <p class="review-card__name">Елизавета Бубнова</p>
+                        <p class="review-card__data">01.01.2018</p>
                     </div>
                 </div>
-                <!-- <div class="arrows-review">
+                <div class="item review-wrap__block">
+                    <div class="review-card">
+                        <img src="img/review/review-icon.png" class="review-card__icon">
+                    </div>
+                    <div class="review-content">
+                        <img src="img/review/review-2.png" class="review-card__face">
+                        <p class="review-card__text">Спасибо вашей стоматологии за быструю и качественную работу.
+                            Лечились у вас всей семьей и остались очень довольны! Теперь будем обслуживаться только
+                            у вас.
+                            Советуем всем посетить стоматологию “Финнланд”</p>
+                        <p class="review-card__name">Анастасия Петрова</p>
+                        <p class="review-card__data">01.01.2018</p>
+                    </div>
+                </div>
+                <div class="item review-wrap__block">
+                    <div class="review-card">
+                        <img src="img/review/review-icon.png" class="review-card__icon">
+                    </div>
+                    <div class="review-content">
+                        <img src="img/review/review-1.png" class="review-card__face">
+                        <p class="review-card__text">Спасибо вашей стоматологии за быструю и качественную работу.
+                            Лечились у вас всей семьей и остались очень довольны! Теперь будем обслуживаться только
+                            у вас. Советуем всем посетить стоматологию “Финнланд”</p>
+                        <p class="review-card__name">Елизавета Бубнова</p>
+                        <p class="review-card__data">01.01.2018</p>
+                    </div>
+                </div>
+                <div class="item review-wrap__block">
+                    <div class="review-card">
+                        <img src="img/review/review-icon.png" class="review-card__icon">
+                    </div>
+                    <div class="review-content">
+                        <img src="img/review/review-1.png" class="review-card__face">
+                        <p class="review-card__text">Спасибо вашей стоматологии за быструю и качественную работу.
+                            Лечились у вас всей семьей и остались очень довольны! Теперь будем обслуживаться только
+                            у вас. Советуем всем посетить стоматологию “Финнланд”</p>
+                        <p class="review-card__name">Елизавета Бубнова</p>
+                        <p class="review-card__data">01.01.2018</p>
+                    </div>
+                </div>
+                <!-- /.review-wrap__block -->
+            </div>
+            <!-- /.review-wrap slider -->
+            <div class="owl-carousel owl-theme owl-loaded">
+                <div class="owl-stage-outer">
+                    <div class="owl-stage">
+                        <div class="owl-item">...</div>
+                        <div class="owl-item">...</div>
+                        <div class="owl-item">...</div>
+                    </div>
+                </div>
+                <div class="owl-nav">
+                    <div class="owl-prev"><img src="img/review/review-arrow-left.png" alt="prev"></div>
+                    <div class="owl-next"><img src="img/review/review-arrow_activ.png" alt="next"></div>
+                </div>
+                <div class="owl-dots">
+                    <div class="owl-dot active"><span></span></div>
+                    <div class="owl-dot"><span></span></div>
+                    <div class="owl-dot"><span></span></div>
+                </div>
+            </div>
+            <!-- <div class="arrows-review">
                     <div class="arrows-left"><img src="img/review/review-arrow-left.png" alt=""></div>
                     <div class="arrows-right"><img src="img/review/review-arrow_activ.png" alt=""></div>
                 </div> -->
-            </div>
-            <!-- /.container -->
-        </section>
-        <!-- /.review -->
-    </main>
-    <section class="connection">
+        </div>
+        <!-- /.container -->
+    </section>
+    <!-- /.review -->
+
+    <section class="connection" id="connection">
         <div class="container">
             <div class="connection-wrap">
                 <div class="connection-block">
@@ -365,94 +367,97 @@
         <!-- /.container -->
     </section>
     <!-- connection -->
-    <section class="offer">
-        <div class="container">
-            <div class="offer-block">
-                <h2 class="offer-block__title">Запишитесь на прием прямо сейчас!</h2>
-                <p class="offer-block__subtitle">Отправьте заявку на прием в нашу стоматологическую клинику и наши
-                    сотрудники свяжутся с вами в ближайшее время</p>
-                <div class="offer-form">
-                    <div class="row">
-                        <form action="#" id="row-form" class="form row-form action success">
-                            <div class="row-form__contact row-name">
-                                <img src="img/contact/naime.png" class="row-form__icon" alt="имя">
-                                <input type="text" name="username" class="row__input row-name__input username1"
-                                    placeholder="Ваше имя">
-                            </div>
-                            <!-- /.row-contact__name -->
-                            <div class="row-form__contact row-tel">
-                                <img src="img/contact/tell.png" class="row-form__icon" alt="tel">
-                                <input type="tel" name="userphone" class="phone row__input row-tel__input userphone1"
-                                    placeholder="Ваш телефон">
-                            </div>
-                            <!-- /.row-contact__tel -->
-                            <div class="row-form__contact row-button">
-                                <button class="button row-button__click">Записаться на прием</button>
-                            </div>
-                        </form>
-                        <!-- /.form row-form -->
+    <div class="footer-wrap">
+        <section class="offer">
+            <div class="container">
+                <div class="offer-block">
+                    <h2 class="offer-block__title">Запишитесь на прием прямо сейчас!</h2>
+                    <p class="offer-block__subtitle">Отправьте заявку на прием в нашу стоматологическую клинику и наши
+                        сотрудники свяжутся с вами в ближайшее время</p>
+                    <div class="offer-form">
+                        <div class="row">
+                            <form action="#" id="row-form" class="form row-form action success">
+                                <div class="row-form__contact row-name">
+                                    <img src="img/contact/naime.png" class="row-form__icon" alt="имя">
+                                    <input type="text" name="username" class="row__input row-name__input username1"
+                                        placeholder="Ваше имя">
+                                </div>
+                                <!-- /.row-contact__name -->
+                                <div class="row-form__contact row-tel">
+                                    <img src="img/contact/tell.png" class="row-form__icon" alt="tel">
+                                    <input type="tel" name="userphone"
+                                        class="phone row__input row-tel__input userphone1" placeholder="Ваш телефон">
+                                </div>
+                                <!-- /.row-contact__tel -->
+                                <div class="row-form__contact row-button">
+                                    <button class="button row-button__click">Записаться на прием</button>
+                                </div>
+                            </form>
+                            <!-- /.form row-form -->
+                        </div>
+                        <!-- /.offer-form -->
                     </div>
-                    <!-- /.offer-form -->
+                    <!-- /.offer-block -->
                 </div>
-                <!-- /.offer-block -->
+                <!-- /.container -->
+        </section>
+        <!-- /.offer -->
+        <section class="footer">
+            <div class="container">
+                <footer class="footer-wrap">
+                    <div class="footer-visited__wrapper">
+                        <div class="navbar-logo footer-visited__column footer-visited__logo">
+                            <span class="logo__text">СТОМАТОЛОГИЧЕСКАЯ СТУДИЯ</span>
+                            <span class="logo__title">Финнланд</span>
+                            <p class="footer-visited__link">Репутация важнее денег. Над ней не властны ни инфляции, ни
+                                кризисы.
+                            </p>
+                        </div>
+                        <div class="footer-visited__column">
+                            <h5 class="footer-visited__title">О компании</h5>
+                            <p class="footer-visited__link">Сотрудники</p>
+                            <p class="footer-visited__link">Отзывы</p>
+                            <p class="footer-visited__link">Партнеры</p>
+                            <p class="footer-visited__link">Акции и скидки</p>
+                            <p class="footer-visited__link">Вакансии</p>
+                        </div>
+                        <div class="footer-visited__column">
+                            <h5 class="footer-visited__title">Наши услуги</h5>
+                            <p class="footer-visited__link">Лечение зубов</p>
+                            <p class="footer-visited__link">Детский прием</p>
+                            <p class="footer-visited__link">Протезирование</p>
+                            <p class="footer-visited__link">Прайс лист</p>
+                        </div>
+                        <div class="footer-visited__column">
+                            <h5 class="footer-visited__title">Наши услуги</h5>
+                            <p class="footer-visited__link">Ортодонтия</p>
+                            <p class="footer-visited__link">Профессиональная гигиена</p>
+                            <p class="footer-visited__link">Отбеливание зубов</p>
+                        </div>
+                        <div class="footer-visited__column">
+                            <h5 class="footer-visited__title">Контакты</h5>
+                            <p class="footer-visited__link">finland24@mail.ru</p>
+                            <p class="footer-visited__link">+7 (390) 254 63 25</p>
+                            <p class="footer-visited__link">+7 (390) 477 12 49</p>
+                        </div>
+                    </div>
+                    <!-- footer-wrap -->
+                    <div class="footer-copyright">
+                        <div class="fotter-copyright__main">
+                            <p class="footer-copyright__text">© 2012-2019 Стоматологическая студия «Финнланд»</p>
+                        </div>
+                        <div class="fotter-copyright__main">
+                            <p class="footer-copyright__text">Создание сайта: Glo Academy</p>
+                        </div>
+                    </div>
+                    <!-- /.footer-coperyte -->
+                </footer>
             </div>
-            <!-- /.container -->
-    </section>
-    <!-- /.offer -->
-    <section class="footer">
-        <div class="container">
-            <footer class="footer-wrap">
-                <div class="footer-visited__wrapper">
-                    <div class="navbar-logo footer-visited__column footer-visited__logo">
-                        <span class="logo__text">СТОМАТОЛОГИЧЕСКАЯ СТУДИЯ</span>
-                        <span class="logo__title">Финнланд</span>
-                        <p class="footer-visited__link">Репутация важнее денег. Над ней не властны ни инфляции, ни
-                            кризисы.
-                        </p>
-                    </div>
-                    <div class="footer-visited__column">
-                        <h5 class="footer-visited__title">О компании</h5>
-                        <p class="footer-visited__link">Сотрудники</p>
-                        <p class="footer-visited__link">Отзывы</p>
-                        <p class="footer-visited__link">Партнеры</p>
-                        <p class="footer-visited__link">Акции и скидки</p>
-                        <p class="footer-visited__link">Вакансии</p>
-                    </div>
-                    <div class="footer-visited__column">
-                        <h5 class="footer-visited__title">Наши услуги</h5>
-                        <p class="footer-visited__link">Лечение зубов</p>
-                        <p class="footer-visited__link">Детский прием</p>
-                        <p class="footer-visited__link">Протезирование</p>
-                        <p class="footer-visited__link">Прайс лист</p>
-                    </div>
-                    <div class="footer-visited__column">
-                        <h5 class="footer-visited__title">Наши услуги</h5>
-                        <p class="footer-visited__link">Ортодонтия</p>
-                        <p class="footer-visited__link">Профессиональная гигиена</p>
-                        <p class="footer-visited__link">Отбеливание зубов</p>
-                    </div>
-                    <div class="footer-visited__column">
-                        <h5 class="footer-visited__title">Контакты</h5>
-                        <p class="footer-visited__link">finland24@mail.ru</p>
-                        <p class="footer-visited__link">+7 (390) 254 63 25</p>
-                        <p class="footer-visited__link">+7 (390) 477 12 49</p>
-                    </div>
-                </div>
-                <!-- footer-wrap -->
-                <div class="footer-copyright">
-                    <div class="fotter-copyright__main">
-                        <p class="footer-copyright__text">© 2012-2019 Стоматологическая студия «Финнланд»</p>
-                    </div>
-                    <div class="fotter-copyright__main">
-                        <p class="footer-copyright__text">Создание сайта: Glo Academy</p>
-                    </div>
-                </div>
-                <!-- /.footer-coperyte -->
-            </footer>
-        </div>
-    </section>
+        </section>
+    </div>
     <!-- <div class="bcg-footer"><img src="img/bcg/footer.png" alt="фон"></div> -->
     <!-- /картинка футер -->
+
     <!-- модальное окно mini -->
     <!-- <div class="modalmini" id="modalmini">
         <div class="modalmini-dialog">
